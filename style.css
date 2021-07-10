@@ -1,0 +1,202 @@
+/* ///////////////////////////////////////////////// */
+/* ////////////////INIT////////////////// */
+/* //////////////////////////////////////////////// */
+
+:root {
+  /* primary */
+  --primary-orange: hsl(31, 77%, 52%);
+  --primary-dk-cyan: hsl(184, 100%, 22%);
+  --primary-dkr-cyan: hsl(179, 100%, 13%);
+  /* neutral*/
+  --neutral-white: hsla(0, 0%, 100%, 0.75);
+  --neutral-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.row {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.container {
+  min-height: 97vh;
+  padding: 12rem 2rem;
+  background-color: var(--neutral-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////CARD COMPONENT////////////////// */
+/* //////////////////////////////////////////////// */
+
+.card-component {
+  display: flex;
+}
+
+.card {
+  padding: 3rem;
+  position: relative;
+}
+
+.card-1 {
+  background-color: var(--primary-orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-2 {
+  background-color: var(--primary-dk-cyan);
+}
+
+.card-3 {
+  background-color: var(--primary-dkr-cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.details {
+  margin-top: 2rem;
+  margin-bottom: 9rem;
+}
+
+.details h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: var(--neutral-gray);
+}
+
+.details p {
+  margin-top: 1.8rem;
+  font-size: 15px;
+  line-height: 1.5rem;
+  padding-right: 1.5rem;
+  color: var(--neutral-white);
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////BUTTONS////////////////// */
+/* //////////////////////////////////////////////// */
+
+.btn-learn-more {
+  position: absolute;
+  bottom: 3rem;
+  width: 9.5rem;
+  height: 3rem;
+  font-size: 15px;
+  text-transform: capitalize;
+  border: 2px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 100px;
+  background-color: var(--neutral-gray);
+  transition: all 0.3s;
+}
+
+.btn-lm-1 {
+  color: var(--primary-orange);
+}
+
+.btn-lm-1:active,
+.btn-lm-1:hover {
+  background-color: var(--primary-orange);
+  border: 2px solid white;
+  color: var(--neutral-white);
+}
+
+.btn-lm-2 {
+  color: var(--primary-dk-cyan);
+}
+
+.btn-lm-2:active,
+.btn-lm-2:hover {
+  background-color: var(--primary-dk-cyan);
+  border: 2px solid white;
+  color: var(--neutral-white);
+}
+
+.btn-lm-3 {
+  color: var(--primary-dkr-cyan);
+}
+
+.btn-lm-3:active,
+.btn-lm-3:hover {
+  background-color: var(--primary-dkr-cyan);
+  border: 2px solid white;
+  color: var(--neutral-white);
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////ATTRIBUTION////////////////// */
+/* //////////////////////////////////////////////// */
+
+.attribution {
+  text-align: center;
+  background-color: var(--neutral-white);
+  color: rgb(59, 52, 52);
+}
+.frontend-mentor,
+.author {
+  text-decoration: none;
+  color: black;
+}
+
+.author {
+  border: 1px solid transparent;
+  transition: all 0.25s;
+}
+
+.author:active,
+.author:hover {
+  border-bottom: 1px solid black;
+}
+
+/* ///////////////////////////////////////////////// */
+/* ////////////////MEDIA QUERIES////////////////// */
+/* //////////////////////////////////////////////// */
+
+@media only screen and (max-width: 760px) {
+  .card {
+    padding: 2rem;
+  }
+  .btn-learn-more {
+    width: 7.5rem;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .row {
+    width: 500px;
+    min-width: 300px;
+  }
+  .container {
+    overflow: hidden;
+  }
+  .card-component {
+    flex-direction: column;
+  }
+  .card {
+    padding: 2.5rem;
+  }
+  .details {
+    margin-bottom: 6rem;
+  }
+
+  .card-1 {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+
+  .card-3 {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
