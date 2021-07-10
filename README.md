@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/darshii98/3-card-component)
+- Live Site URL: [Github Pages](https://darshii98.github.io/3-card-component/)
 
 ### Built with
 
@@ -26,5 +26,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Github- [darshii98](https://github.com/darshii98/)
+- Frontend Mentor - [@darshii98](https://www.frontendmentor.io/profile/darshii98)
